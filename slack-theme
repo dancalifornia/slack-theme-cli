@@ -157,11 +157,11 @@ document.addEventListener('DOMContentLoaded', function() {
  $.ajax({
    url: '$CSS_PATH',
    success: function(css) {
-     let overrides = \`
+     let overrides = `
      code { background-color: #535353; color: #85c5ff; } /* Change color: to whatever font color you want */
      .c-mrkdwn__pre, .c-mrkdwn__quote { background: #535353 !important; background-color: #535353 !important; }
-     \`
-     \$('<style></style>').appendTo('head').html(css + overrides);
+     `
+     $("<style></style>").appendTo('head').html(css + overrides);
    }
  });
 });
